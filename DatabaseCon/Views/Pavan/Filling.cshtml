@@ -1,0 +1,17 @@
+﻿@model DatabaseCon.Models.StudentDetails
+@{
+    Layout = null;
+}
+@using (Html.BeginForm("Demo", "Pavan"))
+{<label>Student_id</label>
+    @Html.TextAreaFor(x => x.studentid)
+    <label>Name</label>
+    @Html.TextBoxFor(x => x.Name)
+    <label>Email</label> 
+    @Html.TextBoxFor(x => x.Email)
+    <label>Marks</label>
+    @Html.TextBoxFor(x => x.Marks)
+    <button>submit</button>
+
+}
+
